@@ -16,13 +16,42 @@
         <form action="#" method="post">
 
             <h2>Por favor, preencha os campos abaixo:</h2>
-
+            
             <fieldset>
                 <legend>Dados Pessoais:</legend>
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" placeholder="Insira o seu nome completo" required>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                <div>
+                    <label for="nome">Nome Completo:</label >
+                        <input type="text" name="nome" id="nome" placeholder="Insira o seu nome completo" required>
+                    <label for="email">E-mail:</label>
+                        <input type="email" maxlength="100"  name="email" id="email" placeholder="Insira seu email" required>
+                </div>
+                <div>
+                    <label for="telefone">Seu telefone:</label>
+                       <input type="tel" name="telefone" id="telefone" placeholder="Apenas números" required>
+                    <label for="dataDeNascimento">Data de nascimento:</label>
+                        <input type="date" name="date" id="date" placeholder="Insira sua data de nascimento" required>
+                </div>
+                
+                <div>
+                    <legend>É maior de idade?</legend>
+                    <input type="radio" name="maiorDeIdade" id="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="maiorDeIdade" id="nao">
+                    <label for="nao">Não</label>
+                </div>
+             
+                
+               
+                
+              
+               
+               
+               
+
+               </optgroup>
+                            
+           
+                
             </fieldset>
         </form>
     </main>
