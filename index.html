@@ -34,27 +34,52 @@
                 
                 <div>
                     <legend>É maior de idade?</legend>
-                    <input type="radio" name="maiorDeIdade" id="sim">
-                    <label for="sim">Sim</label>
-                    <input type="radio" name="maiorDeIdade" id="nao">
-                    <label for="nao">Não</label>
+                    <select name="maiorDeIdade" id="maiorDeIdade" required>
+                      <option value="sim">Sim</option>
+                      <option value="nao">Não</option>
+                    </select>
+                                 
                 </div>
-             
-                
-               
-                
-              
-               
-               
-               
-
-               </optgroup>
-                            
-           
-                
             </fieldset>
+
+            <fieldset>
+                <legend>O que mais te interessa na cidade?</legend>
+                <select name="opcoes" id="opcoes" required>
+                    <option value="pracaDosTresPoderes">Praça dos Três Poderes</option>
+                    <option value="chapadaDosViadeiros">Chapada dos Viadeiros</option>
+                    <option value="pirenópolis">Pirenópolis</option>
+                </select>
+            <legend>Escolha uma ou mais opções:</legend>
+            <input type="radio" name="estudante" id="estudante">
+            <label for="estudante">Estudante</label>
+            <input type="radio" name="turista" id="turista">
+            <label for="turista">Turista</label>
+            <input type="radio" name="residente" id="residente">
+            <label for="residente">Residente</label>
+            <input type="radio" name="nenhuma" id="nenhuma">
+            <label for="nenhuma">Nenhuma</label> 
+
+            </fieldset>
+                           
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
         </form>
     </main>
     
 </body>
 </html>
+            
+
+          
+
+            
+
+                             
+                             
+                             
+                             
+               
+                                      
+                          
+            
+      
