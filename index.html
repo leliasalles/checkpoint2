@@ -1,77 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkpoint 2 FrontEnd 1</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <main>
-      
-        <section>
-            <img src="./img/logo.png" alt="Logo" width="120px">
-        </section>
-        <h1>Sua Tour</h1>
-        <section id="formulario">      
+    <title>Checkpoint2</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        <form action="#" method="post">
-
-            <h2>Por favor, preencha os campos abaixo:</h2>
-            
+<body style="background-color: rgba(16, 112, 236, 0.13);" <div class="box">
+    <form action="">
+        <fieldset>
+            <legend><b>Fórmulário de Cadastro</b></legend>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone" class="labelInput">Telefone</label>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">LGBT+</label>
+                <br><br>
+                <p>É maior de idade?</p>
+                <input type="radio" id="sim" name="maiorIdade" value="sim" required>
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="maiorIdade" value="nao" required>
+                <label for="nao">Não</label>
+            </div>
+            <br>
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço</label>
+            </div>
             <fieldset class="fieldset">
-                <legend >Dados pessoais(obrigatório):</legend>
-                <div >
-                    <label for="nome">Nome Completo:</label >
-                        <input type="text" name="nome" id="nome" placeholder="Insira o seu nome completo" required>
-                    <label for="email">E-mail:</label>
-                        <input type="email" maxlength="100"  name="email" id="email" placeholder="Insira seu email" required>
-                </div>
-                <div>
-                    <label for="telefone">Seu telefone:</label>
-                       <input type="tel" name="telefone" id="telefone" placeholder="Apenas números" required>
-                    <label for="dataDeNascimento">Data de nascimento:</label>
-                        <input type="date" name="date" id="date" placeholder="Insira sua data de nascimento" required>
-                </div>
-                
-                <div>
-                    <legend>É maior de idade?</legend>
-                    <select name="maiorDeIdade" id="maiorDeIdade" required>
-                      <option value="sim">Sim</option>
-                      <option value="nao">Não</option>
-                    </select>
-                                 
-                </div>
-            </fieldset>
-
-            <fieldset class="fieldset">
-                <legend>O que mais te interessa na cidade?(obrigatório)</legend>
+                <legend>Quais locais gostaria de conhecer?</legend>
                 <select name="opcoes" id="opcoes" required>
                     <option value="pracaDosTresPoderes">Praça dos Três Poderes</option>
                     <option value="chapadaDosViadeiros">Chapada dos Viadeiros</option>
                     <option value="pirenópolis">Pirenópolis</option>
                 </select>
-            <legend>Escolha uma ou mais opções(opcional):</legend>
-            <input type="radio" name="estudante" id="estudante">
-            <label for="estudante">Estudante</label>
-            <input type="radio" name="turista" id="turista">
-            <label for="turista">Turista</label>
-            <input type="radio" name="residente" id="residente">
-            <label for="residente">Residente</label>
-            <input type="radio" name="nenhuma" id="nenhuma">
-            <label for="nenhuma">Nenhuma</label> 
-
+                <legend>Escolha uma ou mais opções:</legend>
+                <input type="radio" name="estudante" id="estudante">
+                <label for="estudante">Estudante</label>
+                <input type="radio" name="turista" id="turista">
+                <label for="turista">Turista</label>
+                <input type="radio" name="residente" id="residente">
+                <label for="residente">Residente</label>
+                <input type="radio" name="nenhuma" id="nenhuma">
+                <label for="nenhuma">Nenhuma</label>
             </fieldset>
-                           
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetar</button>
-        </form>
-
-    </section>
-    </main>
-    
+            <br>
+            <input type="reset" name="submit" id="submit">
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+            <br><br>
+        </fieldset>
+    </form>
+    </div>
 </body>
+
 </html>
             
 
