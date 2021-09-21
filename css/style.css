@@ -1,0 +1,83 @@
+
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box {
+        color: rgb(2, 36, 20);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(124, 216, 19, 0.815);
+        padding: 30px;
+        border-radius: 20px;
+        width: 25%;
+    }
+
+    fieldset {
+        border: 2px solid rgb(5, 7, 109);
+    }
+
+    legend {
+        border: 10px 10px solid rgb(104, 226, 165);
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .inputBox {
+        position: relative;
+    }
+
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 2px solid rgb(3, 6, 173);
+        outline: none;
+        color: rgb(19, 1, 19);
+        font-size: 18px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .labelInput {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        pointer-events: none;
+        transition: .2s;
+    }
+
+    .inputUser:focus~.labelInput, .inputUser:valid~.labelInput {
+        top: -10px;
+        font-size: 15px;
+        color: rgb(11, 15, 252);
+    }
+
+    #data_nascimento {
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 10px;
+    }
+
+    #submit {
+        background-image: linear-gradient(to right, rgb(125, 148, 196), rgb(22, 230, 245));
+        width: 100%;
+        border: none;
+        padding: 25px 10px;
+        color: rgb(2, 0, 14);
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    #reset:hover {
+        background-image: (80, 19, 195)
+    }
+
+    #submit:hover {
+        background-image: linear-gradient(to right, rgb(89, 228, 181), rgb(175, 19, 195));
+    }
+   
